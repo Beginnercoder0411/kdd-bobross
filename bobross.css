@@ -1,0 +1,689 @@
+@import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  font-family: "Oooh Baby", cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #343434;
+  overflow-x: hidden;
+  color: #fff;
+  line-height: 35px;
+  font-size: 1.125rem;
+  text-wrap: balance;
+  text-wrap: pretty;
+}
+
+#logo {
+  height: 50px;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 1em;
+  max-width: 100%;
+}
+
+.fullsize {
+  z-index: 999;
+  cursor: zoom-out;
+  display: block;
+  scale: 2.1;
+  position: fixed;
+  left: 38%;
+  top: 150px;
+}
+
+.fullsize2 {
+  z-index: 999;
+  cursor: zoom-out;
+  display: block;
+  scale: 1.8;
+  position: fixed;
+  left: 50%;
+  top: 150px;
+  transform: translateY(25%) translateX(18%);
+}
+
+h1,
+h2,
+h3 {
+  font-size: 400;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  line-height: 85px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h4 {
+  right: 2%;
+}
+
+strong {
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 100px;
+}
+
+.subtitle {
+  font-weight: 700;
+  color: darkred;
+  font-size: 0.75rem;
+  margin: 0;
+  font-size: 2rem;
+  top: 28px;
+  left: 4%;
+}
+
+a {
+  color: #000;
+}
+
+.site-title {
+  display: flex;
+}
+
+/*======Typography=======*/
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  background-color: #d9d9d9;
+  padding: 2em 0;
+  margin-bottom: 6em;
+  text-align: center;
+}
+
+footer {
+  background-color: #d9d9d9;
+  color: #000;
+  padding: 3em 0;
+  margin-top: 400px;
+  text-align: center;
+}
+
+@media (min-width: 675px) {
+  .container-flex {
+    flex-direction: row;
+  }
+}
+/*==Nav==*/
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 2em;
+  bottom: 25px;
+}
+
+nav a {
+  font-weight: 700;
+  padding: 0.25em;
+  text-decoration: none;
+  top: 30px;
+}
+
+@media (max-width: 675px) {
+  .container-flex {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin: 0.5em 0;
+    bottom: 50px;
+  }
+  #logo {
+    display: none;
+  }
+  .site-title h1 {
+    font-size: 3rem;
+  }
+  .subtitle {
+    display: none;
+  }
+  .site-title {
+    flex-direction: column;
+  }
+}
+/*Intro Section*/
+.intro-section {
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -110px;
+}
+
+.background {
+  display: flex;
+  justify-content: space-evenly;
+  z-index: -1;
+  bottom: 396px;
+}
+
+.intro-section h1 {
+  width: 100%;
+  font-size: 70px;
+  text-align: center;
+  left: 60%;
+  letter-spacing: 2px;
+  text-align: center;
+  z-index: 2;
+  transform: translateX(-35%) translateY(250%);
+}
+
+#intro-img {
+  height: 300px;
+  right: 20%;
+}
+
+/*Bio section*/
+.bio-section {
+  top: 150px;
+}
+
+.bio-section h4 {
+  text-align: center;
+  margin-top: 200px;
+}
+
+#bio-body-image,
+#bio-body-image-army {
+  height: 250px;
+  left: 25%;
+  margin-bottom: 100px;
+  top: 50px;
+}
+
+/*Gallery*/
+.gallery-section-image {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  margin: 0 auto;
+  gap: 2em;
+  margin-bottom: 300px;
+}
+
+#gallery-image {
+  height: 250px;
+}
+
+#gallery-image-desert {
+  height: 350px;
+}
+
+/*Gallery*/
+.gallery-section {
+  top: 200px;
+}
+
+.gallery-section h4 {
+  text-align: center;
+}
+
+.gallery-section-main {
+  margin-bottom: 150px;
+}
+
+/*Episodes*/
+.table-container {
+  font-family: "Fira Sans", sans-serif;
+  left: 10%;
+  table-layout: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1a1919;
+  font-weight: 300;
+}
+
+th {
+  text-align: center;
+  background: blue;
+  color: #fff;
+  font-size: 20px;
+}
+
+table, th, td {
+  border: 2px solid white;
+}
+
+caption,
+th,
+td {
+  padding: 10px;
+}
+
+td {
+  color: white;
+  height: 100px;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+caption {
+  font-size: 30px;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  color: #fff;
+  font-weight: 700;
+}
+
+/*Episodes*/
+#episode-link {
+  text-align: center;
+  font-size: 2em;
+  top: 50px;
+}
+
+.episode-list a {
+  color: crimson;
+}
+
+.season-two th {
+  text-align: center;
+  background: green;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-three th {
+  text-align: center;
+  background: red;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-four th {
+  text-align: center;
+  background: rgb(179, 179, 0);
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-five th {
+  text-align: center;
+  background: grey;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-six th {
+  text-align: center;
+  background: steelblue;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-seven th {
+  text-align: center;
+  background: darkorange;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-eight th {
+  text-align: center;
+  background: brown;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-nine th {
+  text-align: center;
+  background: peachpuff;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-ten th {
+  text-align: center;
+  background: purple;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-eleven th {
+  text-align: center;
+  background: wheat;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-twelve th {
+  text-align: center;
+  background: aqua;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-13 th {
+  text-align: center;
+  background: aquamarine;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-14 th {
+  text-align: center;
+  background: hotpink;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-15 th {
+  text-align: center;
+  background: rebeccapurple;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-16 th {
+  text-align: center;
+  background: navy;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-17 th {
+  text-align: center;
+  background: palevioletred;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-18 th {
+  text-align: center;
+  background: #800000;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-19 th {
+  text-align: center;
+  background: #AA336A;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-20 th {
+  text-align: center;
+  background: #D8BFD8;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-21 th {
+  text-align: center;
+  background: #FFFDD0;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-22 th {
+  text-align: center;
+  background: #A52A2A;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-23 th {
+  text-align: center;
+  background: #880808;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-24 th {
+  text-align: center;
+  background: #702963;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-25 th {
+  text-align: center;
+  background: #E0BFB8;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-26 th {
+  text-align: center;
+  background: #FF7518;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-27 th {
+  text-align: center;
+  background: #DAA520;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-28 th {
+  text-align: center;
+  background: #C04000;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-29 th {
+  text-align: center;
+  background: #F89880;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-30 th {
+  text-align: center;
+  background: #EE4B2B;
+  color: #fff;
+  font-size: 20px;
+}
+
+.season-31 th {
+  text-align: center;
+  background: #4A0404;
+  color: #fff;
+  font-size: 20px;
+}
+
+/*Quotes*/
+.quotes {
+  display: flex;
+  flex-direction: column;
+  top: 200px;
+  width: 80%;
+}
+
+.quotes ul {
+  left: 20%;
+}
+
+.quotes li {
+  list-style: none;
+  list-style-image: url(/tree.png);
+  font-size: 20px;
+  row-gap: 50px;
+}
+
+.quotes h3 {
+  text-align: center;
+}
+
+#bob-video {
+  left: 12%;
+  margin-top: 200px;
+  top: 200px;
+  min-height: 500px;
+}
+
+@media (min-width: 420px) and (max-width: 675px) {
+  .intro-section {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -200px;
+  }
+  .intro-section h1 {
+    left: 0;
+    transform: translateY(-100%);
+  }
+  #intro-img {
+    display: none;
+  }
+  #bio-body-image {
+    scale: 0.9;
+    transform: translateX(-28%);
+  }
+  #bio-body-image-army {
+    transform: translateX(-18%);
+  }
+  p {
+    padding: 1rem;
+  }
+  /* table */
+  .table-container {
+    max-width: 100%;
+    width: 75%;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    top: 50px;
+    left: 10%;
+    background-color: transparent;
+  }
+  th {
+    text-align: center;
+    display: none;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid #fff;
+    font-size: 1.1em;
+  }
+  caption,
+  th,
+  td {
+    padding: 10px;
+  }
+  td {
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+  td:first-child {
+    padding-top: 1rem;
+  }
+  td:last-child {
+    padding-bottom: 1rem;
+  }
+  th {
+    display: none;
+  }
+  td::before {
+    content: attr(data-cell) ": ";
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  .intro-section h1 {
+    width: 100%;
+    font-size: 70px;
+    text-align: center;
+    left: 33%;
+    letter-spacing: 2px;
+    text-align: center;
+    z-index: 2;
+    transform: translateX(-35%) translateY(-30px);
+  }
+  #bob-video {
+    left: 25%;
+    top: 100px;
+    height: 500px;
+    max-width: 400px;
+    transform: translateX(-16%);
+  }
+}
+@media (min-width: 676px) and (max-width: 960px) {
+  .table-container {
+    justify-content: center;
+  }
+  #bob-video {
+    margin-top: 200px;
+    top: 200px;
+    min-height: 500px;
+    max-width: 600px;
+    transform: translateX(-5%);
+  }
+  .intro-heading h1 {
+    display: none;
+  }
+  .intro-heading img {
+    left: 5%;
+  }
+  #bio-body-image {
+    transform: translateX(-17%);
+  }
+}
+@media (max-width: 1000px) {
+  table {
+    width: 90%;
+    margin: 0 auto;
+    transform: translateX(-10%);
+  }
+  #bob-video {
+    left: 15%;
+    margin-top: 200px;
+    top: 200px;
+    min-height: 500px;
+  }
+}/*# sourceMappingURL=bobross.css.map */
